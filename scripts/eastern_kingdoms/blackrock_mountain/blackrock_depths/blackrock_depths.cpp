@@ -663,6 +663,8 @@ struct npc_rocknot : public CreatureScript
 
             m_uiBreakKegTimer = 0;
             m_uiBreakDoorTimer = 0;
+
+            m_creature->SetFlag(UNIT_NPC_FLAGS, UNIT_NPC_FLAG_QUESTGIVER);
         }
 
         void DoGo(uint32 id, uint32 state)
